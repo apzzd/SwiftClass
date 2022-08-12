@@ -1,4 +1,4 @@
-import UIKit
+import Foundation
 
 // Card Game Project
 // - enums ✓
@@ -84,7 +84,7 @@ class Player { // define a player
 }
 
 func newDeck() -> Hand {
-    var deck = Hand() // make a full deck
+    let deck = Hand() // make a full deck
 
     for rank in allRanks {
         for suit in allSuits {

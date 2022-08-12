@@ -52,3 +52,9 @@ func weatherReport(_ weather: Weather) -> String {
     }
 }
 
+// using sleep()
+
+print("Waiting 3 seconds...")
+sleep(3)
+print("Finished waiting three seconds!")
+

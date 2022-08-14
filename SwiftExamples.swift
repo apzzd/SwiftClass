@@ -1,6 +1,6 @@
 import UIKit
 
-// Note: See SwiftExamples.txt for explainations of this code and some tips.
+// Note: See SwiftExamples.md for explainations of this code and some tips.
 
 // creating variables
 

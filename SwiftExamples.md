@@ -23,6 +23,7 @@ Some examples of data types are:
   - ``` Float ```
   - ``` Date ```
   - ``` CGColor ```
+  - ``` Bool ```
 
 You can also have variables that are **arrays** of data types. For example
 
@@ -52,3 +53,35 @@ print("  '\(sampleString)' ")
 The first line of the code above just prints "This will be printed! ♥" to the console of whatever editor you're using. If you're using the online Swift simulator, it will be printed off to the right.
 
 The second part is a bit trickier. Remember how you can set variables in Swift? We set one called "sampleString" which has type ```String``. After that, we printed it with quotes around it. You can print **any variable, with any type** by putting it inside ```\()``` in a string which you print.
+
+### Sample functions
+
+```
+func myFunction(_ num: Int) -> String {
+    return "Your number was \(num + 5). Just kidding! It was actually \(num)."
+}
+
+func longerFunction(_ n1: Int, _ n2: Int) -> Bool {
+    return n1 == n2
+}
+```
+
+Above, we made two functions. `myFunction` takes in one ```Int``` and returns a ```String```, and ```longerFunction``` takes in two ```Ints``` and returns a ```Bool``` ("bool" is short for boolean, true or false). 
+
+To declare a function, you write 
+
+```
+func [function name]([var name]: [type]) -> [return type] {
+    [function body]
+}
+```
+
+What's the underscore before the variable name in the first function? Well if you write the variable like ````v1 v2: [type]``` "v1" is what the variable will be **called in the declaration**, so ```function(v1: "blah")```. "v2" will be what the variable is **called inside the function**, so ```return v2```. If you make the first variable name be "_", you can call the function without having to write the variable name, so ```function("blah")```. A function doesn't have to take in any variables at all.
+
+The return type is what sort of value the function is supposed to return. With ```myFunction```, the return type is String, so ```myFunction``` can only return ```String```s. If a return type isn't included, the function can return no value or return a value with any data type. 
+
+The body of the function is just some code that is called when you run the function. It can use the variables passed in to the function. 
+
+
+
+

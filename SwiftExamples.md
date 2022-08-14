@@ -102,5 +102,5 @@ Enums are groups of possible values of a variable with a specific type. For exam
 let weather: Weather = Weather.foggy
 ```
 
-and ```weather``` will be set to the value ````Weather.foggy```. We'll see how we can use enums later.
+and ```weather``` will be set to the value ```Weather.foggy```. We'll see how we can use enums later.
 

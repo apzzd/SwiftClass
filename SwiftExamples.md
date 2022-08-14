@@ -138,3 +138,55 @@ case [someValue2]:
 ```
 
 Switch cases **must always have a default, unless the variable has a type where its value can only be a limited set of things.** This is because there are an infinite number of possible ```String```s and ```Int```s and ```CGColor```s, and if there is no default, the program doesn't know what to do when it runs into an exception. For ```Bool```s and enum types, there are a limited set of values for the variable.
+
+### Using an enum (and switch case) in a function
+
+```
+enum Weather {
+    case rainy
+    case sunny
+    case foggy
+    case cloudy
+    case snowy
+}
+
+func weatherReport(_ weather: Weather) -> String {
+    switch weather {
+    case Weather.rainy:
+        return "🌧️"
+    case Weather.sunny:
+        return "☀️"
+    case Weather.foggy:
+        return "🌫️"
+    case Weather.cloudy:
+        return "☁️"
+    case Weather.snowy:
+        return "🌨️"
+    }
+}
+```
+
+In the code above, we made a function ```weatherReport``` that uses **enums** and **switch cases**. The function takes in a variable ```weather``` that has type ```Weather```. We use a switch case for all possible values of ```weather``` and returns a different ```String``` for each. Because we put an ```_``` before the variable, we can call the function
+
+```
+weatherReport(Weather.sunny)
+```
+
+without having to type out ```weather: Weather.sunny```.
+
+### Using sleep()
+
+```
+
+print("Waiting 3 seconds...")
+sleep(3)
+print("Finished waiting three seconds!")
+
+```
+
+Above, we used the built-in ```sleep()``` function which takes in an ```Int``` and waits for that number of seconds before continuing. This code should print the first thing, wait three seconds, and then print the second thing. This function is good for creating suspenseful delays in games. :)
+
+---
+
+And that's the end (for now). Have fun coding in Swift! 👩‍💻
+

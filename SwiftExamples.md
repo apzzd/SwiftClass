@@ -37,3 +37,18 @@ let pets: [String] = ["Dog", "Cat"]
 ```
 
 "pets" would be an array with the **elements** "Dog" and "Cat" .
+
+### Printing values to the screen
+
+```
+print("This will be printed! ♥")
+
+let sampleString: String = "~ SaMpLe StRiNg ~"
+
+print("Here is a sample string:")
+print("  '\(sampleString)' ")
+```
+
+The first line of the code above just prints "This will be printed! ♥" to the console of whatever editor you're using. If you're using the online Swift simulator, it will be printed off to the right.
+
+The second part is a bit trickier. Remember how you can set variables in Swift? We set one called "sampleString" which has type ```String``. After that, we printed it with quotes around it. You can print **any variable, with any type** by putting it inside ```\()``` in a string which you print.

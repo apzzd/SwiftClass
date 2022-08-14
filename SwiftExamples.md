@@ -82,6 +82,25 @@ The return type is what sort of value the function is supposed to return. With `
 
 The body of the function is just some code that is called when you run the function. It can use the variables passed in to the function. 
 
+### Sample enums
 
+```
+enum Weather {
+    case rainy
+    case sunny
+    case foggy
+    case cloudy
+    case snowy
+}
+```
 
+That block of code above is called an **enum**. Enums are sort of like data types that are invented by the coder. They can even be passed into functions, as we will see. 
+
+Enums are groups of possible values of a variable with a specific type. For example, we can set
+
+```
+let weather: Weather = Weather.foggy
+```
+
+and ```weather``` will be set to the value ````Weather.foggy```. We'll see how we can use enums later.
 

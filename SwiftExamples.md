@@ -66,7 +66,7 @@ func longerFunction(_ n1: Int, _ n2: Int) -> Bool {
 }
 ```
 
-Above, we made two functions. `myFunction` takes in one ```Int``` and returns a ```String```, and ```longerFunction``` takes in two ```Ints``` and returns a ```Bool``` ("bool" is short for boolean, true or false). 
+Above, we made two **functions**. `myFunction` takes in one ```Int``` and returns a ```String```, and ```longerFunction``` takes in two ```Ints``` and returns a ```Bool``` ("bool" is short for boolean, true or false). 
 
 To declare a function, you write 
 
@@ -82,7 +82,7 @@ The return type is what sort of value the function is supposed to return. With `
 
 The body of the function is just some code that is called when you run the function. It can use the variables passed in to the function. 
 
-### Sample enums
+### Sample enum
 
 ```
 enum Weather {
@@ -104,3 +104,37 @@ let weather: Weather = Weather.foggy
 
 and ```weather``` will be set to the value ```Weather.foggy```. We'll see how we can use enums later.
 
+### Using switch case
+
+```
+var person = "Bob"
+
+switch person {
+case "Alice":
+    print("I know you!")
+case "Carl", "Dave", "John":
+    print("I'm sorry, what did you say your name was?")
+case "Elaine":
+    print("Hello, friend!")
+default:
+    print("Sorry, I don't know you.")
+}
+```
+
+**Switch cases** run certain lines of code based on the value of a specific variable. In the code above, the switch case prints out different things based on the value of the variable ```person```. All switch cases are written in the format 
+
+```
+switch [variable] {
+case [someValue]:
+  [code]
+case [someValue2]:
+  [code]
+ .
+ .
+ .
+ default:
+  [code]
+}
+```
+
+Switch cases **must always have a default, unless the variable has a type where its value can only be a limited set of things.** This is because there are an infinite number of possible ```String```s and ```Int```s and ```CGColor```s, and if there is no default, the program doesn't know what to do when it runs into an exception. For ```Bool```s and enum types, there are a limited set of values for the variable.

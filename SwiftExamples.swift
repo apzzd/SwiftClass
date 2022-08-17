@@ -1,8 +1,8 @@
 import UIKit
 
-// Note: See SwiftExamples.md for explainations of this code and some tips.
+// Note: See SwiftExamples.txt for explainations of this code and some tips.
 
-// creating variables
+// Creating variables
 
 let name: String = "Bob"
 let hair: CGColor = CGColor(red: 0.70, green: 0.35, blue: 0.0, alpha: 1)
@@ -11,7 +11,7 @@ let pets: [String] = []
 let dateBorn: Date
 let friend: (String, Int) = ("Carl", 41)
 
-// printing values to the screen
+// Printing values to the screen
 
 print("This will be printed! ♥")
 
@@ -20,7 +20,7 @@ let sampleString: String = "~ SaMpLe StRiNg ~"
 print("Here is a sample string:")
 print("  '\(sampleString)' ")
 
-// sample functions
+// Sample functions
 
 func myFunction(_ num: Int) -> String {
     return "Your number was \(num + 5). Just kidding! It was actually \(num)."
@@ -30,7 +30,19 @@ func longerFunction(_ n1: Int, _ n2: Int) -> Bool {
     return n1 == n2
 }
 
-// sample enum
+// Loops
+
+for i in 0...10 {
+    print(i)
+}
+
+var counter: Int = 0
+while counter <= 10 {
+    print(counter)
+    counter += 1
+}
+
+// Sample enum
 
 enum Weather {
     case rainy
@@ -40,7 +52,19 @@ enum Weather {
     case snowy
 }
 
-// using switch case
+// Using if/else
+
+let string = "Lorem ipsum"
+
+if string.first == "L" {
+    print("string starts with 'L'")
+} else if string.count < 5 {
+    print("string is short")
+} else {
+    print("string is not special :'(")
+}
+
+// Using switch case
 
 var person = "Bob"
 
@@ -55,7 +79,7 @@ default:
     print("Sorry, I don't know you.")
 }
 
-// using an enum (and switch case) in a function
+// Using an enum (and switch case) in a function
 
 func weatherReport(_ weather: Weather) -> String {
     switch weather {
@@ -72,7 +96,7 @@ func weatherReport(_ weather: Weather) -> String {
     }
 }
 
-// using sleep()
+// Using sleep()
 
 print("Waiting 3 seconds...")
 sleep(3)

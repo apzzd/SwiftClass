@@ -52,7 +52,7 @@ print("  '\(sampleString)' ")
 
 The first line of the code above just prints "This will be printed! ♥" to the console of whatever editor you're using. If you're using the online Swift simulator, it will be printed off to the right.
 
-The second part is a bit trickier. Remember how you can set variables in Swift? We set one called "sampleString" which has type ```String``. After that, we printed it with quotes around it. You can print **any variable, with any type** by putting it inside ```\()``` in a string which you print.
+The second part is a bit trickier. Remember how you can set variables in Swift? We set one called "sampleString" which has type ```String```. After that, we printed it with quotes around it. You can print **any variable, with any type** by putting it inside ```\()``` in a string which you print.
 
 ### Sample functions
 
@@ -76,7 +76,7 @@ func [function name]([var name]: [type]) -> [return type] {
 }
 ```
 
-What's the underscore before the variable name in the first function? Well if you write the variable like ````v1 v2: [type]``` "v1" is what the variable will be **called in the declaration**, so ```function(v1: "blah")```. "v2" will be what the variable is **called inside the function**, so ```return v2```. If you make the first variable name be "_", you can call the function without having to write the variable name, so ```function("blah")```. A function doesn't have to take in any variables at all.
+What's the underscore before the variable name in the first function? Well if you write the variable like ```v1 v2: [type]``` "v1" is what the variable will be **called in the declaration**, so ```function(v1: "blah")```. "v2" will be what the variable is **called inside the function**, so ```return v2```. If you make the first variable name be ```_```, you can call the function without having to write the variable name, so ```function("blah")```. A function doesn't have to take in any variables at all.
 
 The return type is what sort of value the function is supposed to return. With ```myFunction```, the return type is String, so ```myFunction``` can only return ```String```s. If a return type isn't included, the function can return no value or return a value with any data type. 
 

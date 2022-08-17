@@ -82,6 +82,24 @@ The return type is what sort of value the function is supposed to return. With `
 
 The body of the function is just some code that is called when you run the function. It can use the variables passed in to the function. 
 
+## Loops
+
+```
+for i in 0...10 {
+    print(i)
+}
+
+var counter: Int = 0
+while counter <= 10 {
+    print(counter)
+    counter += 1
+}
+```
+
+Above are examples of two different types of loop - **for loops** and **while loops**. The code inside for loops runs a set number of times, using a ```Range``` or ```Array``` to determine how many times. A ```Range``` is basically like an array of numbers, and in our example it is an array of numbers from 0 to 10, including 0 and 10.
+
+While loops run the code inside them as long as something is true. The part after the ```while``` is the condition in which the code will run. In our case, the code will run if ```counter <= 10```.
+
 ### Sample enum
 
 ```

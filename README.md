@@ -1,10 +1,5 @@
 # SwiftClass
-Materials for a class on Swift
 
-Online Swift compiler:
-https://swiftfiddle.com
+For examples and explainations, go to [the documentation](SwiftExamples.md)
 
-Swift documentation:
-https://www.swift.org/documentation/
-
-Check out SwiftExamples.md for code examples + explanations. 👩‍💻✨
+For "hard core" documentation, go to [swift.org](swift.org/documentation)
